@@ -1,0 +1,1 @@
+evaluate loss : 0.05133945143222809 evaluate iou : 0.9403291344642639
