@@ -6,26 +6,20 @@ Member:
 ## Project Overview
 
 เนื่องจากว่าใน project เดิม final-project face enhancement ยังไม่สามารถสร้าง model ที่สามารถเข้ากับ goal ของ project ได้มากนัก เพราะว่าตัว model มีขนาด file ที่ใหญ่มาก (~3GB) และมีการใช้ ram ที่สูงมาก (~6GB)
-
 ซึ่ง goal เดิมของเราคืออยากจะใช้ model เพื่อปรับแต่งรูปภาพ แต่เนื่องจากว่าการปรับแต่งรูปภาพมักจะใช้บน mobile device เป็นหลักทำให้จำเป็นต้องสร้าง model ใหม่ที่เป็นแบบ lightweight model เพื่อให้ทำงานบน mobile device ได้
-
 อีกทั้ง project เดิมได้มีการทำ preprocessing data ไม่เหมาะสมทำให้การ train model ใช้เวลานาน(~14 นาที) / 1 epoch แม้จะใช้ GPU ที่ดีๆก็ตาม(A100) ทำให้ใช้ หน่วยประมวลผล บน google colab อย่างมหาศาล จึงไม่สามารถลอง encoder ตัวอื่นๆได้
 
 ## Optimization จาก project เดิม
 
 ได้มีการ preprocess ก่อนนำไปเข้า data set เนื่องจากว่า image ของ lapa เดิมมีขนาดที่หลากหลายโดยมีขนาดที่มากกว่า 224x224 แน่ๆ จึงทำการย่อให้เหลือ 224x224 ก่อนและ save image ไว้ใน google colab disk เพื่อลดเวลาการ Load image จาก disk
-
 ทำให้เวลาการ train / 1 epoch เหลือ ~ 2นาที และเปลี่ยนไปใช้ GPU V100 ทำให้ speedup ได้ 7 เท่าและประหยัดหน่วยประมวลผลได้ 2.6 เท่า
-
 และมีการเปลี่ยนการใช้ loss function เป็น focal loss gamma = 2 ทำให้สามารถ segmentation ได้เก่งขึ้นแม้จะใช้ encoder ที่เล็กลง
 
 ## Architecture
 
-ได้มีการลองใช้ Architecture แบบ Unet++ และ DeepLabV3+ เพื่อหาว่า model ไหนเหมาะสมกับการนำมาใช้กว่ากันจะเห็นว่าจาก
+ได้มีการลองใช้ Architecture แบบ Unet++ และ DeepLabV3+ โดย model4 ใช้เป็นแบบ DeepLabV3+ ส่วน model5 ใช้เป็น Unet++ และวัดผลด้วย mean IoU scoreเพื่อหาว่า model ไหนเหมาะสมกับการนำมาใช้กว่ากันจะเห็นว่าจาก
 
-โดย model4 ใช้เป็นแบบ DeepLabV3+ ส่วน model5 ใช้เป็น Unet++ โดยวัดผล metric ด้วย mean IoU score
-
-[model4](https://github.com/hellp002/Extended-Face-Enhancement/blob/main/model_eval_on_LaPa/model4/model4_test_class.csv)และ
+[model4](https://github.com/hellp002/Extended-Face-Enhancement/blob/main/model_eval_on_LaPa/model4/model4_test_class.csv)
 
 [model5](https://github.com/hellp002/Extended-Face-Enhancement/blob/main/model_eval_on_LaPa/model5/model5_test_class.csv)
 
