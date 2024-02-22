@@ -1,12 +1,12 @@
-,mIoU Score each class
-background,0.97858393
-skin,0.9273475
-left brown,0.16961591
-right brown,0.081653856
-left eye,0.07263782
-right eye,0.06232586
-nose,0.8047318
-upper lip,0.4046193
-mouth,0.35395107
-lower lip,0.47124833
-hair,0.8893619
+,IoU Score each class
+background,0.9739143
+skin,0.9052817
+left brown,0.21595979
+right brown,0.025242513
+left eye,0.15822843
+right eye,0.0662557
+nose,0.78437924
+upper lip,0.37656647
+mouth,0.3319546
+lower lip,0.4541197
+hair,0.8633946
