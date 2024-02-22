@@ -33,7 +33,15 @@ Member:
 
 Loss Plot
 
-![model4_loss]([https://github.com/hellp002/Extended-Face-Enhancement/model_eval_on_LaPa/model4/model4_loss.png](https://github.com/hellp002/Extended-Face-Enhancement/blob/6d6b1472d4e5d2be1c600a427bf1bb8593cd5756/model_eval_on_LaPa/model4/model4_loss.png))
+![model4_loss](https://github.com/hellp002/Extended-Face-Enhancement/assets/94524977/12d12dc0-6251-42e5-89c8-b8216d5d5487)
+
+![model5_loss](https://github.com/hellp002/Extended-Face-Enhancement/assets/94524977/19876d02-4fd3-4b0f-b782-4f4681296da0)
+
+mIoU Plot
+
+![model4_iou](https://github.com/hellp002/Extended-Face-Enhancement/assets/94524977/08827eb0-0e84-4466-9eac-e3db987f8375)
+
+![model5_iou](https://github.com/hellp002/Extended-Face-Enhancement/assets/94524977/c67439ad-254e-43f8-bbab-c71360719d25)
 
 Encoder | Weights | Params,M
 --- | --- | ---
