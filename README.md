@@ -33,7 +33,7 @@ Member:
 
 Loss Plot
 
-![model4_loss](https://github.com/hellp002/Extended-Face-Enhancement/model_eval_on_LaPa/model4/model4_loss.png)
+![model4_loss]([https://github.com/hellp002/Extended-Face-Enhancement/model_eval_on_LaPa/model4/model4_loss.png](https://github.com/hellp002/Extended-Face-Enhancement/blob/6d6b1472d4e5d2be1c600a427bf1bb8593cd5756/model_eval_on_LaPa/model4/model4_loss.png))
 
 Encoder | Weights | Params,M
 --- | --- | ---
