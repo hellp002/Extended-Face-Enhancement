@@ -23,13 +23,13 @@ Member:
 
 [model5](https://github.com/hellp002/Extended-Face-Enhancement/blob/main/model_eval_on_LaPa/model5/model5_test_class.csv)
 
-จะเห็นว่า performance เฉพาะส่วนที่นำมาใช้ segmentation ของ model 5 ดีกว่า model 4 เสมอ (background,upper lip,mouth,lower lip,hair) ซึ่งสอดคล้องการผลการทดลองจริงๆ
+จะเห็นว่า performance เฉพาะส่วนที่นำมาใช้ segmentation ของ model 5 ใกล้เคียงกับ model 4 (background,upper lip,mouth,lower lip,hair) และในส่วนการนำไปใช้จริงๆ เหมือนว่า DeepLabV3+ จะดีกว่าเล็กน้อย
 
 [model4](https://github.com/hellp002/Extended-Face-Enhancement/blob/main/model_eval_face_enhancement/model4_result_enhancement.csv)
 
 [model5](https://github.com/hellp002/Extended-Face-Enhancement/blob/main/model_eval_face_enhancement/model5_result_enhancement.csv)
 
-จึงตัดสินใจว่าควรจะใช้ Architecture แบบ Unet++ และสำหรับการ segmentation ในส่วนใบหน้า และใช้ face detection จาก library dlib 
+จึงตัดสินใจว่าควรจะใช้ Architecture แบบ DeepLabV3+ และสำหรับการ segmentation ในส่วนใบหน้า และใช้ face detection จาก library dlib 
 
 Encoder | Weights | Params,M
 --- | --- | ---
