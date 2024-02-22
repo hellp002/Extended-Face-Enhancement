@@ -31,6 +31,10 @@ Member:
 
 จึงตัดสินใจว่าควรจะใช้ Architecture แบบ DeepLabV3+ และสำหรับการ segmentation ในส่วนใบหน้า และใช้ face detection จาก library dlib 
 
+Loss Plot
+
+![model4_loss](https://github.com/hellp002/Extended-Face-Enhancement/model_eval_on_LaPa/model4/model4_loss.png)
+
 Encoder | Weights | Params,M
 --- | --- | ---
 mobilenet_v2 | imagenet | 2M
